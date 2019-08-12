@@ -12,6 +12,10 @@ class Student
     @id = id
   end
   
+  def update
+    
+  end
+  
   def self.new_from_db(row)
     id = row[0]
     name = row[1]
@@ -56,6 +60,5 @@ class Student
     student = Student.new(name, grade)
     student.save
  end
-  
-  
+
 end
