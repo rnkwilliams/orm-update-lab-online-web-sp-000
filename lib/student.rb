@@ -12,7 +12,7 @@ class Student
     @id = id
   end
   
-  def self.new_from_db(row)
+  def self.new_from_db
     new_student = self.new
     new_student.id = row[0]
     new_student.name = row[1]
