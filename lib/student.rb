@@ -18,7 +18,7 @@ class Student
   end
   
   def self.new_from_db(row)
-    pat = Student.new_from_db(row)
+    row = Student.new_from_db(row)
     id = row[0]
     name = row[1]
     grade = row[2]
