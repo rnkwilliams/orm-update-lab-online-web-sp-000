@@ -21,7 +21,7 @@ class Student
     id = row[0]
     name = row[1]
     grade = row[2]
-    self.new(name, grade, id)
+    self.new(id, name, grade)
   end
 
   def self.create_table
