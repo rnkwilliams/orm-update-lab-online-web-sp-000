@@ -17,6 +17,7 @@ class Student
     DB[:conn].execute(sql, self.name, self.grade, self.id)
   end
   
+  #creates an instance with corresponding attribute values
   def self.new_from_db(row)
     id = row[0]
     name = row[1]
