@@ -24,7 +24,8 @@ class Student
     self.new(id, name, grade)
   end
 
-  def self.create_table #creates the students table in the database
+  #creates the students table in the database
+  def self.create_table 
     sql = <<-SQL
     CREATE TABLE students(
       id INTEGER PRIMARY KEY,
