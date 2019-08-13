@@ -1,6 +1,8 @@
 require_relative "../config/environment.rb"
 
 class Student
+  #has a name and a grade
+  #has an id that defaults to `nil` on initialization
   attr_accessor :name, :grade
   attr_reader :id
   
