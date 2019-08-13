@@ -69,6 +69,7 @@ class Student
     student.save
  end
  
+ #returns an instance of student that matches the name from the DB
  def self.find_by_name(name)
     sql = <<-SQL
       SELECT *
