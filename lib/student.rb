@@ -44,7 +44,10 @@ class Student
     DB[:conn].execute(sql)
   end
   
-  def save
+  #saves an instance of the Student class to the database
+  #sets the given students #`id` attribute
+  
+  def save      
     if self.id   #updates a record if called on an object that is already persisted
       self.update
     else
