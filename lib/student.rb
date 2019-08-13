@@ -62,6 +62,7 @@ class Student
     end
   end
   
+ #creates a student with two attributes, name and grade, and saves it into the students table
  def self.create(name, grade)
     student = Student.new(name, grade)
     student.save
