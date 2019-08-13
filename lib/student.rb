@@ -46,9 +46,9 @@ class Student
   
   #saves an instance of the Student class to the database
   #sets the given students #`id` attribute
-  
+  #updates a record if called on an object that is already persisted
   def save      
-    if self.id   #updates a record if called on an object that is already persisted
+    if self.id  
       self.update
     else
       sql = <<-SQL
